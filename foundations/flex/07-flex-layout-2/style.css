@@ -8,16 +8,23 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-family: Arial;
+  padding: 10px;
+  box-sizing:border-box;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar {
-  width: 300px;
+  flex: 300px;
   background: royalblue;
   box-sizing: border-box;
 }
@@ -26,4 +33,30 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+.whole-page{
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+.content-div{
+  display: flex;
+}
+
+.main-content-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 50px;
+  flex: 8; 
+}
+
+.card{
+  height: 200px;
 }
